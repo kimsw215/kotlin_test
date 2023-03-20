@@ -1,4 +1,4 @@
-package kr.ac.kpu.ce2019152012.kotlin_test
+package kr.ac.kpu.ce2019152012.kotlin_test.programmers
 
 class Client(val name: String, val code: Int) {
     fun copy(name: String = this.name, code: Int = this.code ) = Client(name,code)

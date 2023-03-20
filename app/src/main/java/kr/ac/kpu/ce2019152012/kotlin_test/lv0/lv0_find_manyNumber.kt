@@ -11,7 +11,7 @@ fun main() {
     val ValueOfmax = mut.groupingBy { it }.eachCount().maxByOrNull { it.value }!!.value // 최빈값의밸류: 3
 
     var arr = mut.groupingBy { it }.eachCount().toList()
-    println("arr: ${arr} , max를 가지는 key 값: $keyOfmax, value: ${ValueOfmax}")
+    println("arr: ${arr.javaClass} , max를 가지는 key 값: $keyOfmax, value: ${ValueOfmax}")
 
     for( (k,v) in arr) if(ValueOfmax == v) cnt++
 
